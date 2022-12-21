@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.white {
+    color: white;
+    transition: 1.5s;
+}
+.icon-padding {
+    padding: 5px;
+}
+.icon-size {
+    font-size: 30px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: #393939;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../background.png");
+    background-position: center;
+    background-size: cover;
+    background-position: 30%;
+}
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+}
+.navigation-button {
+    background-color: transparent;
+    border: none;
+    z-index: 9999;
+    font-size: 45px;
+}
+.navigation-link {
+    color: white;
+}
+.computer-nav {
+    display: none;
+    width: 370px;
+}
+.computer-nav ul {
+    display: flex;
+    list-style: none;
+}
+.computer-nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Oswald;
+    padding: 5px;
+    display: block;
+}
+button i {
+    color: white;
+}
+#x {
+    z-index: 99999;
+    display: none;
+    font-size: 60px;
+}
+.text {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top: 20%;
+
+}
+.white-vertical-strip {
+    position: absolute;
+    width: 30px;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    left: 5%;
+}
+.container  {
+    height: 50%;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+}
+.container h1 {
+    margin-top: -30px;
+    padding-left: 2%;
+    font-family: Oswald;
+    font-size: 30px;
+}
+.container p {
+    font-family: Oswald;
+    padding-top: 20px;
+    padding-left: 2%;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #6D6D6D;
+    display: none;
+}
+.navigation ul {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.navigation ul a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-active {
+    display: block;
+}
+.none {
+    z-index: -100 !important;
+}
+.none2 {
+    /* z-index: -50; */
+    opacity: 0;
+    transition: 1s;
+}
+}
+.dn {
+    display: none !important;
+}
+.grey {
+    color: #6D6D6D;
+}
+.text-button-div {
+    position: relative;
+    top: 33%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.text-show-button {
+    background-color: #1D1D1D;
+    width: 120px;
+    height: 50px;
+    border-color: white;
+    color: white;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-top: -20px;
+    transition: 1s;
+}
+main {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #393939;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.animation-flex-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.con-for-girl {
+    padding-left: 30px;
+    position: relative;
+    /* width: 50%; */
+    
+}
+.text-girl {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 45px;
+    position: absolute;
+    transform: rotate(-23deg);
+    top: 35%;
+    left: 20%;
+    z-index: 1;
+}
+.praying-girl {
+    width: 90%;
+    padding-top: 10px;
+    position: relative;
+}
+.girl-rotate {
+    transform: rotate(23.5deg);
+    transition: 1s;
+}
+.text-girl-transition {
+    transform: rotate(2deg); 
+    transition: 3s;
+    transform: translateY(90%);
+}
+.con-for-dreams {
+    padding-left: 20px;
+    position: relative;
+    /* width: 50%; */
+}
+.follow-your-dreams {
+    width: 90%;
+}
+.text-dreams {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 30px;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 40%;
+    left: 14%;
+    z-index: 1;
+}
+.dreams-rotate {
+    transform: rotate(-20deg);
+    transition: 1s;
+}
+.text-dreams-transition {
+    transform: rotate(10deg);
+    transition: 3s;
+    transform: translateY(150%);
+}
+.remember-text {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 40px;
+    color: #C4C4C4;
+}
+.con-for-sky {
+    width: 100%;
+    position: relative !important;
+    overflow: hidden;
+}
+.sky {
+    width: 95%;
+    align-self: center;
+    margin: 20px 0 2% 3%;
+    display: flex;
+}
+.sky-text {
+    align-self: center;
+    position: absolute !important;
+    margin-top: 10px;
+    margin-left: 10%;
+    top: 25%;
+    /* left: 10%; */
+    font-size: 30px;
+    color: white;
+    font-family: 'Saira Stencil One', cursive;
+}
+.color-button {
+    width: 60%;
+    height: 70px;
+    font-family: Oswald;
+    font-size: 20px;
+    margin: 20px;
+    background-color: #888888;
+    border-radius: 50px;
+    border: none;
+    transition: background 1s;
+}
+.button-green-bgc {
+    background-color: green;
+}
+.header-fotter {
+    width: 100%;
+    background-color: #393939;
+    padding: 10px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.footer-con {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-con h6 {
+    align-self: center;
+    letter-spacing: 2px;
+    color: white;
+}
+.footer-con h6 a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+#fotter-i-ig {
+    align-self: flex-end;
+}
+.computer-nav ul a li:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: .2s;
+}
+.navigation-link i:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}
+.footer-con h6 a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: .2s;
+}
+/* a:hover {
+    transform: scale(1.2);
+    transform: 1s;
+} */
+@media only screen and (min-width: 500px) {
+    .text-girl-transition {
+        transform: translateY(110%);
+    }
+    .text-girl {
+        font-size: 9vw;
+    }
+    .text-dreams-transition {
+        transform: translateY(180%);
+    }
+    .text-dreams {
+        font-size: 7vw;
+    }
+    .sky-text {
+        font-size: 7vw;
+        top: 17%;
+        margin-left: 9%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .white-vertical-strip {
+        height: 85%;
+    } 
+    .container h1  {
+        font-size: 40px;
+    }
+    .container p {
+        font-size: 23px;
+        padding-right: 7%;
+    }
+    .text-show-button {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .text-girl-transition {
+        transform: translateY(150%);
+    }
+    .burger {
+        display: none;
+    }
+    .computer-nav {
+        display: block;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .animation-flex-con {
+        flex-direction: row;
+    }
+    .con-for-girl {
+        width: 50%;
+    }
+    .con-for-dreams {
+        width: 50%;
+    }
+    .text-girl {
+        font-size: 60px;
+    }
+    .text-girl-transition {
+        transform: translateY(85%);
+    }
+    .text-dreams {
+        font-size: 38px;
+        left: 13%;
+    }
+    .text-dreams-transition {
+        transform: translateY(155%);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .sky-text {
+        font-size: 100px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .container h1 {
+        font-size: 65px;
+    }
+    .container p {
+        font-size: 30px;
+    }
+    .white-vertical-strip {
+        left: 10%;
+    }
+    .sky-text {
+        font-size: 110px;
+    }
+    .text-girl-transition {
+        transform: translateY(130%);
+    }
+    .text-girl {
+        font-size: 70px;
+    }
+    .text-dreams-transition {
+        transform: translateY(160%);
+    }
+    .text-dreams {
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    .sky-text {
+        font-size: 125px;
+    }
+    .text-girl-transition {
+        transform: translateY(150%);
+    }
+    .text-girl {
+        font-size: 75px;
+    }
+    .text-dreams-transition {
+        transform: translateY(170%);
+    }
+    .text-dreams {
+        font-size: 60px;
+    }
+} 
+@media only screen and (min-width: 1850px) {
+    .sky-text {
+        font-size: 140px;
+    }
+    .text-girl {
+        font-size: 85px;
+    }
+    .text-dreams {
+        font-size: 65px;
+    }
+} 

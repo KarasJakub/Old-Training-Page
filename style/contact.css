@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: #393939;
+}
+.contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+}
+.bold {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.text-contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container img {
+    width: 100%;
+}
+.text-contact-container h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+.text-contact-container p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 20px 10%;
+    color: white;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+.form {
+    margin-right: 5%;
+    text-align: center;
+    background-color: grey;
+    display: none;
+    border: 2px solid black;
+}
+.inviting-text {
+    font-family: Oswald;
+    font-size: 40px;
+}
+.name-and-email {
+    width: 90%;
+    height: 25px;
+    border: 1px solid black;
+}
+#message {
+    width: 90%;
+    height: 100px;
+    border: 1px solid black;
+}
+form h3 {
+    font-size: 20px;
+    font-family: 'Cinzel';
+    padding: 5px;
+}
+.rodo-content {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+.rodo {
+    font-family: 'Lora';
+    font-size: 14px;
+    font-weight: lighter;
+}
+.form-button-div {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+#send-button {
+    width: 120px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: 'Lora';
+    background-color: #fff;
+    color: black;
+    border: 2px solid white;
+    margin: 5px;
+    transition: .7s;
+    background-color: black;
+    color: white;
+}
+#send-button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-container {
+        flex-direction: row;
+    }
+    .contact-container img {
+        display: none;
+    }
+    .contact-container {
+        height: 87vh;
+    }
+    .form {
+        display: block;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .text-contact-container h3 {
+        font-size: 80px;
+    }
+    .text-contact-container p {
+        font-size: 25px;
+    }
+}
